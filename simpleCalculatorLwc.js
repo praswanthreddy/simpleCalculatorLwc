@@ -36,7 +36,7 @@ export default class SimpleCalculatorLwc extends LightningElement {
       this.result=Number(this.num1)*Number(this.num2)
     }
     else if(oper==="divide"){
-      this.result=Math.round(Number(this.num1)/Number(this.num2),2)
+      this.result=(Number(this.num1)/Number(this.num2)).toFixed(2)
     }
 
   }
