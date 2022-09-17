@@ -11,10 +11,11 @@
         <lightning-input read-only="true" name="result" value={result} label="Result"> </lightning-input>
         </div>
         <div class="slds-button-group slds-var-p-around_small" role="group">
-            <button class="slds-button  slds-button_outline-brand"  name="sum" onclick={handleClick}> <strong>Sum</strong></button>
-            <button class="slds-button  slds-button_outline-brand" name="minus" onclick={handleClick}><strong>Subtract</strong></button>
-            <button class="slds-button  slds-button_outline-brand" name="multiply" onclick={handleClick}><strong>Multiply</strong></button>
-            <button class="slds-button  slds-button_outline-brand" name="divide" onclick={handleClick}><strong>Divide</strong></button>
+            <button class="slds-button  slds-button_brand"  name="sum" onclick={handleClick}> Sum</button>
+            <button class="slds-button  slds-button_outline-brand" name="minus" onclick={handleClick}>Subtract</button>
+            <button class="slds-button  slds-button_brand" name="multiply" onclick={handleClick}>Multiply</button>
+            <button class="slds-button  slds-button_outline-brand" name="divide" onclick={handleClick}>Divide</button>
+            <button class="slds-button slds-button_destructive" name="clear" onclick={clearHandler} >Clear</button>
         </div>
 </lightning-card>
 </template>
